@@ -9,7 +9,7 @@ using namespace std;
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
-int Speed = 15;
+int Speed = 10;
 int Level = 1;
 
 
@@ -17,6 +17,7 @@ SDL_Window* win = NULL;
 SDL_Surface* scr = NULL;
 SDL_Surface* flower = NULL;
 SDL_Surface* level = NULL;
+SDL_Surface* s1 = NULL;
 
 //Level 1; перевернут на бок (/*не знаю, как исправить*/ так и должно быть)
 //ID: 1-wall up and down, 2-wall left and right, 0-ground, 3, 4, 5, 6-wall-ygol
@@ -106,18 +107,14 @@ bool init() {
 }
 
 bool load() {
-	//flower = IMG_LoadGIF_RW(C:\\Users\\Honor\\Desktop\\Character1.gif);
-	//flower = IMG_LoadGIF("C:\Users\Honor\Desktop\Character1.gif");
-	flower = IMG_Load("C:\\Users\\Honor\\Desktop\\Character1.png");
+	flower = IMG_Load("Character1.png");
 	if (flower == NULL) {
 		std::cout << "Can't load: " << IMG_GetError() << std::endl;
-		//return false;
 	}
 
 	flower = SDL_ConvertSurface(flower, scr->format, NULL);
 	if (flower == NULL) {
 		std::cout << "Can't convert: " << SDL_GetError() << std::endl;
-		//return false;
 	}
 
 	return true;
@@ -133,9 +130,7 @@ void quit() {
 	IMG_Quit();
 }
 
-//Load level
-
-vector <SDL_Surface> sprites = {};
+vector <SDL_Surface*> sprites = { IMG_Load(ground[rand() % 7]), IMG_Load("Wall1.png"), IMG_Load("WallYgol1.png"), IMG_Load("WallYgol4.png"), IMG_Load("WallYgol2.png"), IMG_Load("WallYgol3.png"), IMG_Load("Wall4.png") };
 void LoadLevel(int levelID)
 {
 	SDL_Rect TilePlace;
@@ -148,43 +143,8 @@ void LoadLevel(int levelID)
 			for (int y1 = 0; y1 < 20; y1++)
 			{
 				TilePlace.x = x1 * 50 + 25;
-				TilePlace.y = y1 * 50 + 25;
-
-				if (Level1[x1][y1] == 1)
-				{
-					level = IMG_Load(ground[rand()%7]);
-					SDL_BlitScaled(level, NULL, scr, &TilePlace);
-				}
-				if (Level1[x1][y1] == 2)
-				{
-					level = IMG_Load("Wall1.png");
-					SDL_BlitScaled(level, NULL, scr, &TilePlace);
-				}
-				if (Level1[x1][y1] == 3)
-				{
-					level = IMG_Load("WallYgol1.png");
-					SDL_BlitScaled(level, NULL, scr, &TilePlace);
-				}
-				if (Level1[x1][y1] == 4)
-				{
-					level = IMG_Load("WallYgol4.png");
-					SDL_BlitScaled(level, NULL, scr, &TilePlace);
-				}
-				if (Level1[x1][y1] == 5)
-				{
-					level = IMG_Load("WallYgol2.png");
-					SDL_BlitScaled(level, NULL, scr, &TilePlace);
-				}
-				if (Level1[x1][y1] == 6)
-				{
-					level = IMG_Load("WallYgol3.png");
-					SDL_BlitScaled(level, NULL, scr, &TilePlace);
-				}
-				if (Level1[x1][y1] == 7)
-				{
-					level = IMG_Load("Wall4.png");
-					SDL_BlitScaled(level, NULL, scr, &TilePlace);
-				}
+				TilePlace.y = y1 * 50 + 25;		
+				SDL_BlitScaled(sprites[Level1[x1][y1] - 1], NULL, scr, &TilePlace);
 			}
 		}
 	}
@@ -250,8 +210,8 @@ int main(int argc, char* args[])
 	{
 		while (SDL_PollEvent(&event) != 0)
 		{
-			//if (event.type = SDL_QUIT & ttime > 10) { IsRun = 0; }
-			if (event.type = SDL_KEYDOWN)
+			if (event.type == SDL_QUIT) { IsRun = 0; }
+			if (event.type == SDL_KEYDOWN)
 			{
 				//Move
 				if (event.key.keysym.sym == SDLK_w)
