@@ -9,7 +9,7 @@ using namespace std;
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
-int Speed = 10;
+int Speed = 5;
 int x = 350, y = 350;
 int Level = 1;
 
@@ -54,7 +54,7 @@ vector<vector<int>>Level1 =
     {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
     {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
     {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-    {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+    {2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
     {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
     {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
     {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
@@ -247,8 +247,8 @@ int main(int argc, char* args[])
 
     const Uint8 *keysPressed = SDL_GetKeyboardState(NULL);
 
-    vector <const char *> sprites = { "Character1.png", "Character2.png" };
-
+    //vector <const char *> sprites = { "Character1.png", "Character2.png" };
+    SDL_Surface* sprites[2] = { IMG_Load("Character1.png"), IMG_Load("Character2.png") };
     while (IsRun)
     {
         while (SDL_PollEvent(&event) != 0)
@@ -257,10 +257,9 @@ int main(int argc, char* args[])
             {
                 IsRun = 0;
             }
-            if(event.type == SDL_KEYDOWN)
-                Move(keysPressed);
-        }
 
+        }
+        Move(keysPressed);
         SDL_FillRect(scr, NULL, SDL_MapRGB(scr->format, 0, 0, 0));
 
         LoadLevel(Level);
@@ -269,7 +268,7 @@ int main(int argc, char* args[])
         bg_Player.y = y;
 
         ttime++;
-        flower = IMG_Load(sprites[(ttime / 10) % 2]);
+        flower = sprites[(ttime / 10) % 2];
         SDL_BlitScaled(flower, NULL, scr, &bg_Player);
         SDL_UpdateWindowSurface(win);
     }
