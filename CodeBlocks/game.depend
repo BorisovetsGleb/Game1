@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1646896230 source:c:\users\uchenik\desktop\game\main.cpp
+	"SDL.h"
+	"SDL_image.h"
+	<iostream>
+	<vector>
+	"F1.h"
+
+1646894571 c:\users\uchenik\desktop\game\f1.h
+	"SDL.h"
+	"SDL_image.h"
+	<iostream>
+
