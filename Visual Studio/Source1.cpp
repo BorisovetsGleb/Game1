@@ -26,11 +26,11 @@ SDL_Surface* s1 = NULL;
 SDL_Surface* enemy = NULL;
 
 
-//Level 1; РїРµСЂРµРІРµСЂРЅСѓС‚ РЅР° Р±РѕРє (/*РЅРµ Р·РЅР°СЋ, РєР°Рє РёСЃРїСЂР°РІРёС‚СЊ*/ С‚Р°Рє Рё РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ)
+//Level 1; перевернут на бок (/*не знаю, как исправить*/ так и должно быть)
 //ID: 1-wall up and down, 2-wall left and right, 0-ground, 3, 4, 5, 6-wall-ygol
 vector<vector<int>>Level1 = {
 		{3, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 4},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 8, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
@@ -46,7 +46,7 @@ vector<vector<int>>Level1 = {
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 3, 7, 7, 7, 4, 8, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2},
@@ -56,7 +56,7 @@ vector<vector<int>>Level1 = {
 		{2, 1, 1, 1, 1, 1, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{5, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6}
 };
@@ -222,9 +222,47 @@ bool CanRight(int x, int y)
 	return true;
 }
 
+vector <vector<int>> SpawnPlaces = {{}};
+
+void GetSpawnPos()
+{
+	vector<int> a = {};
+	for (int x = 0; x < 30; x++)
+	{
+		for (int y = 0; y < 20; y++)
+		{
+			if (Level1[x][y] == 9)
+			{
+				a = {};
+				a.push_back(x * 50 + 25);
+				a.push_back(y * 50 + 25);
+				SpawnPlaces.push_back(vector <int>(x, y));
+				a = {};
+			}
+		}
+	}
+}
+
+SDL_Rect Enemy;
+
+void SpawnEnemy(int &Ex, int &Ey)
+{
+	if (!SpawnPlaces.empty())
+	{
+		int i = (rand() % SpawnPlaces.size());
+		Ex = SpawnPlaces[i][0];
+		Ey = SpawnPlaces[i][1];
+	}
+}
 
 int main(int argc, char* args[])
 {
+	GetSpawnPos();
+	bool att1 = 0;
+	bool att2 = 0;
+	bool att3 = 0;
+	bool att4 = 0;
+
 	int ttime = 0;
 	if (!init()) {
 		system("pause");
@@ -244,7 +282,6 @@ int main(int argc, char* args[])
 	bg_Player.x = 350;
 	bg_Player.y = 350;
 
-	SDL_Rect Enemy;
 	Enemy.w = 60;
 	Enemy.h = 60;
 
@@ -288,6 +325,7 @@ int main(int argc, char* args[])
 					}
 				}
 				if (event.key.keysym.sym == SDLK_q) { x = 350; y = 350; Alive = true; }
+				if (event.key.keysym.sym == SDLK_p) { IsRun = 0; }
 			}
 		}
 
@@ -311,8 +349,21 @@ int main(int argc, char* args[])
 		if (EnemyAlive) 
 		{
 			SDL_BlitScaled(enemy[(ttime / 50) % 2], NULL, scr, &Enemy);
-			if (abs(x - Ex) < 60 and abs(y - Ey) < 60) { Alive = 0;  EnemyAlive = 0; }
+			if (Alive) 
+			{
+				if (abs(x - Ex) < 60 and abs(y - Ey) < 60) { Alive = 0;  EnemyAlive = 0; }
+				if (abs(x - Ex) < 40 && y < Ey) { att1 = 1; }
+				if (abs(x - Ex) < 40 && y > Ey) { att2 = 1; }
+				if (abs(y - Ey) < 40 && x > Ex) { att3 = 1; }
+				if (abs(y - Ey) < 40 && x < Ex) { att4 = 1; }
+			}
+			if (att1 == 1) { Ey = Ey - 10; }
+			if (att2 == 1) { Ey = Ey + 10; }
+			if (att3 == 1) { Ex = Ex + 10; }
+			if (att4 == 1) { Ex = Ex - 10; }
+			if (Ex < 1 || Ey < 1 || Ex > 1500 || Ey > 1000) { EnemyAlive = 0; }
 		}
+		if (!EnemyAlive) { SpawnEnemy(Ex, Ey); att1 = 0; att2 = 0; att3 = 0; att4 = 0; }
 
 		SDL_UpdateWindowSurface(win);
 	}
