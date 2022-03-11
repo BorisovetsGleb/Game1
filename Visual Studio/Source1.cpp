@@ -13,6 +13,7 @@ int Speed = 10;
 int Level = 1;
 
 bool Alive = 1;
+bool EnemyAlive = 1;
 
 
 SDL_Window* win = NULL;
@@ -38,7 +39,7 @@ vector<vector<int>>Level1 = {
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
@@ -46,11 +47,11 @@ vector<vector<int>>Level1 = {
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
-		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 3, 7, 7, 7, 4, 8, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2},
+		{2, 1, 1, 1, 1, 1, 5, 7, 7, 7, 6, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 1, 1, 1, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
 		{2, 1, 1, 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2},
@@ -60,7 +61,7 @@ vector<vector<int>>Level1 = {
 		{5, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6}
 };
 
-vector <const char*> ground = { "Ground1.png", "Ground2.png", "Ground3.png", "Ground1.png", "Ground4.png", "Ground5.png", "Ground1.png" };
+vector <const char*> ground = { "Ground1.png", "Ground2.png", "Ground3.png", "Ground1.png", "Ground4.png", "Ground5.png", "Ground1.png"};
 
 bool init() {
 	if (SDL_Init(SDL_INIT_VIDEO) != 0) {
@@ -116,7 +117,8 @@ vector <SDL_Surface*> sprites = {
 	IMG_Load("WallYgol2.png"),
 	IMG_Load("WallYgol3.png"),
 	IMG_Load("Wall4.png"),
-	IMG_Load("GroundAttack.png")
+	IMG_Load("GroundAttack.png"),
+	IMG_Load("EnemySpawner.png")
 };
 
 void LoadLevel(int levelID)
@@ -159,26 +161,67 @@ int Trigger(int x, int y)
 }
 
 //Can player move?
-bool CanUp(int y)
+bool CanUp(int x, int y)
 {
 	if (y < 75) { return false; }
+	for (int x1 = 0; x1 < 30; x1++)
+	{
+		for (int y1 = 0; y1 < 20; y1++)
+		{
+			if (Level1[x1][y1] == 2)
+			{
+				if (abs(y - y1 * 50 - 30) < 30 and abs(x - x1 * 50) < 30) { return false; }
+			}
+		}
+	}
 	return true;
 }
-bool CanDown(int y)
+bool CanDown(int x, int y)
 {
 	if (y > 900) { return false; }
+	for (int x1 = 0; x1 < 30; x1++)
+	{
+		for (int y1 = 0; y1 < 20; y1++)
+		{
+			if (Level1[x1][y1] == 2)
+			{
+				if (abs(y - y1 * 50 + 30 - 20) < 30 and abs(x - x1 * 50 - 5) < 30) { return false; }
+			}
+		}
+	}
 	return true;
 }
-bool CanLeft(int x)
+bool CanLeft(int x, int y)
 {
 	if (x < 75) { return false; }
+	for (int x1 = 0; x1 < 30; x1++)
+	{
+		for (int y1 = 0; y1 < 20; y1++)
+		{
+			if (Level1[x1][y1] == 7)
+			{
+				if (abs(y - y1 * 50) < 30 and abs(x - x1 * 50 - 50) < 30) { return false; }
+			}
+		}
+	}
 	return true;
 }
-bool CanRight(int x)
+bool CanRight(int x, int y)
 {
 	if (x > 1400) { return false; }
+	for (int x1 = 0; x1 < 30; x1++)
+	{
+		for (int y1 = 0; y1 < 20; y1++)
+		{
+			if (Level1[x1][y1] == 7)
+			{
+				if (abs(y - y1 * 50) < 30 and abs(x - x1 * 50 + 30) < 30) { return false; }
+			}
+		}
+	}
 	return true;
 }
+
 
 int main(int argc, char* args[])
 {
@@ -204,10 +247,8 @@ int main(int argc, char* args[])
 	SDL_Rect Enemy;
 	Enemy.w = 60;
 	Enemy.h = 60;
-	Enemy.x = 500;
-	Enemy.y = 500;
 
-	int x = 350, y = 350;
+	int x = 350, y = 350, Ex = 500, Ey = 500;
 
 	bool IsRun = 1;
 	SDL_Event event;
@@ -215,7 +256,9 @@ int main(int argc, char* args[])
 	vector <SDL_Surface *> Player_sprites = { IMG_Load("Character1.png"), IMG_Load("Character2.png") };
 	SDL_Surface* Death = IMG_Load("Death.png");
 
-	SDL_Surface* enemy = IMG_Load("Enemy1.png");
+	vector <SDL_Surface*> enemy = { IMG_Load("Enemy1.png"), IMG_Load("Enemy2.png") };
+
+
 
 	while (IsRun)
 	{
@@ -229,26 +272,26 @@ int main(int argc, char* args[])
 				{
 					if (event.key.keysym.sym == SDLK_w)
 					{
-						if (CanUp(y)) { y = y - Speed; }
+						if (CanUp(x, y)) { y = y - Speed; }
 					}
 					if (event.key.keysym.sym == SDLK_s)
 					{
-						if (CanDown(y)) { y = y + Speed; }
+						if (CanDown(x, y)) { y = y + Speed; }
 					}
 					if (event.key.keysym.sym == SDLK_a)
 					{
-						if (CanLeft(x)) { x = x - Speed; }
+						if (CanLeft(x, y)) { x = x - Speed; }
 					}
 					if (event.key.keysym.sym == SDLK_d)
 					{
-						if (CanRight(x)) { x = x + Speed; }
+						if (CanRight(x, y)) { x = x + Speed; }
 					}
 				}
-				else if (event.key.keysym.sym == SDLK_q) { x = 350; y = 350; Alive = true; }
+				if (event.key.keysym.sym == SDLK_q) { x = 350; y = 350; Alive = true; }
 			}
 		}
 
-		SDL_FillRect(scr, NULL, SDL_MapRGB(scr->format, 0, 0, 0));
+		SDL_FillRect(scr, NULL, SDL_MapRGB(scr->format, 145, 97, 52));
 
 		LoadLevel(Level);
 
@@ -259,13 +302,22 @@ int main(int argc, char* args[])
 
 		bg_Player.x = x;
 		bg_Player.y = y;
+		Enemy.x = Ex;
+		Enemy.y = Ey;
 
 		ttime++;
 		if (Alive) { SDL_BlitScaled(Player_sprites[(ttime / 20) % 2], NULL, scr, &bg_Player); }
 		else { SDL_BlitScaled(Death, NULL, scr, &bg_Player); }
-		SDL_BlitScaled(enemy, NULL, scr, &Enemy);
+		if (EnemyAlive) 
+		{
+			SDL_BlitScaled(enemy[(ttime / 50) % 2], NULL, scr, &Enemy);
+			if (abs(x - Ex) < 60 and abs(y - Ey) < 60) { Alive = 0;  EnemyAlive = 0; }
+		}
+
 		SDL_UpdateWindowSurface(win);
 	}
+
+
 
 	quit();
 	return 0;
