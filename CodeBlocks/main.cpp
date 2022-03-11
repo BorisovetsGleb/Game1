@@ -9,7 +9,7 @@ using namespace std;
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
-int Speed = 5;
+int Speed = 10;
 int x = 350, y = 350;
 int Level = 1;
 
@@ -19,6 +19,8 @@ SDL_Surface* scr = NULL;
 SDL_Surface* flower = NULL;
 SDL_Surface* level = NULL;
 SDL_Surface* s1 = NULL;
+SDL_Renderer* renderer = NULL;
+
 
 vector <const char*> ground =
 {
@@ -89,6 +91,12 @@ bool init()
     if (win == NULL)
     {
         std::cout << "Can't create window: " << SDL_GetError() << std::endl;
+        return false;
+    }
+
+    renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
+    if(renderer == NULL){
+        std::cout << "Can't create renderer: " << SDL_GetError() << std::endl;
         return false;
     }
 
@@ -241,7 +249,7 @@ int main(int argc, char* args[])
     bg_Player.h = 80;
     bg_Player.x = 350;
     bg_Player.y = 350;
-
+    SDL_Rect* pt_Player = &bg_Player;
     bool IsRun = 1;
     SDL_Event event;
 
@@ -249,6 +257,10 @@ int main(int argc, char* args[])
 
     //vector <const char *> sprites = { "Character1.png", "Character2.png" };
     SDL_Surface* sprites[2] = { IMG_Load("Character1.png"), IMG_Load("Character2.png") };
+    SDL_Surface* bulletSurface = IMG_Load("bullet.png");
+    SDL_Texture* bullet = SDL_CreateTextureFromSurface(renderer, bulletSurface);
+    SDL_Texture* playerTexture = SDL_CreateTextureFromSurface(renderer, sprites[0]);
+
     while (IsRun)
     {
         while (SDL_PollEvent(&event) != 0)
@@ -257,7 +269,6 @@ int main(int argc, char* args[])
             {
                 IsRun = 0;
             }
-
         }
         Move(keysPressed);
         SDL_FillRect(scr, NULL, SDL_MapRGB(scr->format, 0, 0, 0));
@@ -268,9 +279,13 @@ int main(int argc, char* args[])
         bg_Player.y = y;
 
         ttime++;
-        flower = sprites[(ttime / 10) % 2];
-        SDL_BlitScaled(flower, NULL, scr, &bg_Player);
-        SDL_UpdateWindowSurface(win);
+        //flower = sprites[(ttime / 10) % 2];
+        //SDL_BlitScaled(flower, NULL, scr, &bg_Player);
+        SDL_RenderCopy(renderer, playerTexture, NULL, pt_Player);
+        //SDL_RenderCopyEx(renderer, bullet, NULL, NULL, 60.0, NULL, SDL_FLIP_NONE);
+
+        SDL_RenderPresent(renderer);
+        //SDL_UpdateWindowSurface(win);
     }
 
     quit();
