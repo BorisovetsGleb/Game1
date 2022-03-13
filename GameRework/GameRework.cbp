@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Functions.cpp" />
+		<Unit filename="Functions.h" />
 		<Unit filename="Level.cpp" />
 		<Unit filename="Level.h" />
 		<Unit filename="Object.cpp" />
@@ -38,6 +40,26 @@
 		<Unit filename="Player.cpp" />
 		<Unit filename="RoomTypes.cpp" />
 		<Unit filename="Sprites.cpp" />
+		<Unit filename="Textures/Character1.png" />
+		<Unit filename="Textures/Character2.png" />
+		<Unit filename="Textures/Death.png" />
+		<Unit filename="Textures/Enemy1.png" />
+		<Unit filename="Textures/Enemy2.png" />
+		<Unit filename="Textures/EnemySpawner.png" />
+		<Unit filename="Textures/Ground1.png" />
+		<Unit filename="Textures/Ground2.png" />
+		<Unit filename="Textures/Ground3.png" />
+		<Unit filename="Textures/Ground4.png" />
+		<Unit filename="Textures/Ground5.png" />
+		<Unit filename="Textures/GroundSpikes.png" />
+		<Unit filename="Textures/Wall2.png" />
+		<Unit filename="Textures/Wall3.png" />
+		<Unit filename="Textures/WallDownLeftCorner.png" />
+		<Unit filename="Textures/WallDownRightCorner.png" />
+		<Unit filename="Textures/WallLeftRight.png" />
+		<Unit filename="Textures/WallUpDown.png" />
+		<Unit filename="Textures/WallUpperLeftCorner.png" />
+		<Unit filename="Textures/WallUpperRightCorner.png" />
 		<Unit filename="main.cpp" />
 		<Unit filename="main.h" />
 		<Extensions>

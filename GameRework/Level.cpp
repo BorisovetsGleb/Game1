@@ -22,8 +22,8 @@ void Level::SetRoom(){
 }
 
 void Level::LoadRoom(){
-	TileRect.w = 55;
-	TileRect.h = 55;
+	TileRect.w = 50;
+	TileRect.h = 50;
     for (int x1 = 0; x1 < 30; x1++){
         for (int y1 = 0; y1 < 20; y1++){
             TileRect.x = x1 * 50 + 25;

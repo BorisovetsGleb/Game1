@@ -19,17 +19,22 @@ public:
     void Move();
     Player(int x, int y, int width, int height, int speed);
 private:
-    int x;//position X          //<-- maybe delete this
-    int y;//position Y          //<-- maybe delete this
-    int width;//player width    //<-- maybe delete this
-    int height;//player height  //<-- maybe delete this
+    int x;//position X          //<-- probably delete this
+    int y;//position Y          //<-- probably delete this
+    int gridX;//position x on a grid
+    int gridY;//position y on a grid
+    int width;//player width    //<-- probably delete this
+    int height;//player height  //<-- probably delete this
     int speed;//player speed
-    SDL_Surface* surfacePointer;//pointer to player surface     //<-- maybe delete this
+    SDL_Surface* surfacePointer;//pointer to player surface     //<-- probably delete this
     SDL_Rect rectangle;//player rectangle on which texture is put and which determines position of a player
     SDL_Rect* rectanglePointer;//pointer to player rectangle(kostil')
-
     SDL_Texture* texturePointer;//player texture pointer
     const Uint8* keyboardKeysPressed = SDL_GetKeyboardState(NULL);//array of keys pressed
+    bool CanUp();
+    bool CanDown();
+    bool CanLeft();
+    bool CanRight();
 };
 
 #endif // OBJECT_H_INCLUDED
