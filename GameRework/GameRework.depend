@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1647186917 source:d:\project\game\gamerework\object.cpp
+	"Object.h"
+
+1647187041 source:d:\project\game\gamerework\player.cpp
+	"Object.h"
+
+1647106142 d:\project\game\gamerework\player.h
+
+1647187080 d:\project\game\gamerework\object.h
+	"main.h"
+
+1647178624 d:\project\game\gamerework\main.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	"Level.h"
+	"Functions.h"
+	"Object.h"
+
+1647186775 source:d:\project\game\gamerework\main.cpp
+	"main.h"
+
+1647186514 source:d:\project\game\gamerework\level.cpp
+	"Level.h"
+
+1647183706 source:d:\project\game\gamerework\roomtypes.cpp
+	"Object.h"
+
+1647186359 d:\project\game\gamerework\level.h
+	"main.h"
+
+1647184085 source:d:\project\game\gamerework\sprites.cpp
+	"main.h"
+
+1647178456 d:\project\game\gamerework\functions.h
+
+1647185265 source:d:\project\game\gamerework\functions.cpp
+	"main.h"
+
