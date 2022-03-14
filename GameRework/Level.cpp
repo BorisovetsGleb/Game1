@@ -26,8 +26,8 @@ void Level::LoadRoom(){
 	TileRect.h = 50;
     for (int x1 = 0; x1 < 30; x1++){
         for (int y1 = 0; y1 < 20; y1++){
-            TileRect.x = x1 * 50 + 25;
-            TileRect.y = y1 * 50 + 25;
+            TileRect.x = x1 * 50 + 50;
+            TileRect.y = y1 * 50 + 50;
             SDL_RenderCopy(renderer, textures[room1[x1][y1] + 1], NULL, TilePlace);
         }
 	}
