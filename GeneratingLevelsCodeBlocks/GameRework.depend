@@ -1,0 +1,91 @@
+# depslib dependency file v1.0
+1647186917 source:d:\project\game\gamerework\object.cpp
+	"Object.h"
+
+1647199142 source:d:\project\game\gamerework\player.cpp
+	"Object.h"
+
+1647106142 d:\project\game\gamerework\player.h
+
+1647199059 d:\project\game\gamerework\object.h
+	"main.h"
+
+1647178624 d:\project\game\gamerework\main.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	"Level.h"
+	"Functions.h"
+	"Object.h"
+
+1647186775 source:d:\project\game\gamerework\main.cpp
+	"main.h"
+
+1647195691 source:d:\project\game\gamerework\level.cpp
+	"Level.h"
+
+1647183706 source:d:\project\game\gamerework\roomtypes.cpp
+	"Object.h"
+
+1647186359 d:\project\game\gamerework\level.h
+	"main.h"
+
+1647184085 source:d:\project\game\gamerework\sprites.cpp
+	"main.h"
+
+1647178456 d:\project\game\gamerework\functions.h
+
+1647185265 source:d:\project\game\gamerework\functions.cpp
+	"main.h"
+
+1647375779 source:c:\users\glebs\downloads\ourgame\gamerework\functions.cpp
+	"main.h"
+
+1647379346 c:\users\glebs\downloads\ourgame\gamerework\main.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<list>
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+	"Object.h"
+
+1647381693 c:\users\glebs\downloads\ourgame\gamerework\level.h
+	"main.h"
+
+1647249724 c:\users\glebs\downloads\ourgame\gamerework\functions.h
+
+1647370596 c:\users\glebs\downloads\ourgame\gamerework\object.h
+	"main.h"
+
+1647371643 source:c:\users\glebs\downloads\ourgame\gamerework\level.cpp
+	"Level.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\main.cpp
+	"main.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\object.cpp
+	"Object.h"
+
+1647369160 source:c:\users\glebs\downloads\ourgame\gamerework\player.cpp
+	"Object.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\roomtypes.cpp
+	"Object.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\sprites.cpp
+	"main.h"
+
+1647380503 c:\users\glebs\downloads\ourgame\gamerework\room.h
+	"main.h"
+
+1647380991 source:c:\users\glebs\downloads\ourgame\gamerework\room.cpp
+	"Room.h"
+
