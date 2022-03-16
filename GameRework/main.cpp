@@ -14,7 +14,7 @@ int main(int argc, char* args[]){
     bool isRun = true;
     SDL_Event event;
     LoadSprites();
-    Player player(350, 350, 80, 80, 5);
+    Player player(350, 350, 80, 44, 5);
 
     while(isRun){
         while (SDL_PollEvent(&event) != 0){

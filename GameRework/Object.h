@@ -19,6 +19,7 @@ public:
     void Move();
     Player(int x, int y, int width, int height, int speed);
 private:
+    bool Alive;
     int x;//position X          //<-- probably delete this
     int y;//position Y          //<-- probably delete this
     int gridX;//position x on a grid
@@ -35,6 +36,7 @@ private:
     bool CanDown();
     bool CanLeft();
     bool CanRight();
+    void CollisionGrid();
 };
 
 #endif // OBJECT_H_INCLUDED

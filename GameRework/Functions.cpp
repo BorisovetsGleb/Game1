@@ -39,6 +39,9 @@ void LoadSprites(){
 	LoadTexture("Textures\\Ground3.png");
 	LoadTexture("Textures\\Ground4.png");
 	LoadTexture("Textures\\Ground5.png");
+    LoadTexture("Textures\\Death.png");
+    LoadTexture("Textyres\\Character3.png");
+    LoadTexture("Textures\\Death2.png");
 }
 
 
