@@ -7,6 +7,7 @@ class Room{
 public:
     Room();//constructor for class Room
     vector<Room*> exits;//vector of exits from the room 0-left 1-upper 2-right 3-down exit(-s)
+    vector<int> ints;
     int numberOfExits;//number of exits in the room
     vector<vector<int>> roomStructure;//structure of the room
     void setExit(int direction, Room* room);//deletes one or several walls in room vector

@@ -28,8 +28,8 @@ void LoadSprites(){
     //0
     LoadTexture("Textures\\Ground1.png");
     LoadTexture("Textures\\WallUpDown.png");
+    LoadTexture("Textures\\WallDownLeftCorner.png");
 	LoadTexture("Textures\\WallUpperLeftCorner.png");
-	LoadTexture("Textures\\WallDownLeftCorner.png");
 	LoadTexture("Textures\\WallUpperRightCorner.png");
 	LoadTexture("Textures\\WallDownRightCorner.png");
 	LoadTexture("Textures\\WallLeftRight.png");
@@ -56,4 +56,10 @@ int randomNumber(int lowerBorder, int upperBorder){
         std::mt19937 gen(seed);
         std::uniform_int_distribution<unsigned> distrib(lowerBorder, upperBorder);
         return distrib(gen);
+}
+
+void printArray(const vector<Room*> &arr){
+    for(int  i = 0; i < arr.size(); i++)
+        cout << arr[i] << endl;
+    cout << endl;
 }

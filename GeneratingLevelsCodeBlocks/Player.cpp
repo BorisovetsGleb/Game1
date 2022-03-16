@@ -56,39 +56,55 @@ bool Player::CanRight()
 
 void Player::Move(){
     //Move
-    if (keyboardKeysPressed[SDL_SCANCODE_W])
-    {
+    if (keyboardKeysPressed[SDL_SCANCODE_W]){
         //cout << keyboardKeysPressed[SDL_SCANCODE_W];
-        if (CanUp())
+        //if (CanUp())
             y = y - speed;
     }
-    if (keyboardKeysPressed[SDL_SCANCODE_S])
-    {
+    if (keyboardKeysPressed[SDL_SCANCODE_S]){
         //cout << keyboardKeysPressed[SDL_SCANCODE_S];
-        if (CanDown())
+        //if (CanDown())
             y = y + speed;
     }
-    if (keyboardKeysPressed[SDL_SCANCODE_A])
-    {
+    if (keyboardKeysPressed[SDL_SCANCODE_A]){
         //cout << keyboardKeysPressed[SDL_SCANCODE_A];
-        if (CanLeft())
+        //if (CanLeft())
             x = x - speed;
     }
-    if (keyboardKeysPressed[SDL_SCANCODE_D])
-    {
+    if (keyboardKeysPressed[SDL_SCANCODE_D]){
         //cout << keyboardKeysPressed[SDL_SCANCODE_D];
-        if (CanRight())
+        //if (CanRight())
             x = x + speed;
     }
     if(SDL_GetError() != NULL){
-        cout << SDL_GetError() <<endl;
+        //cout << SDL_GetError() <<endl;
     }
     gridX = ((x + 40 - 50) / 50);
     gridY = ((y + 40 - 50) / 50);
+    if(gridX == 0){
+        x += 1380;
+        Level::SetRoom(currentRoom->exits[0]);
+    }
+    else if(gridY == 0){
+        y += 900;
+        Level::SetRoom(currentRoom->exits[1]);
+    }
+    else if(gridX == 29){
+        x -= 1380;
+        Level::SetRoom(currentRoom->exits[2]);
+    }
+    else if(gridY == 19){
+        y -= 900;
+        Level::SetRoom(currentRoom->exits[3]);
+    }
+    else{
+    rectangle.x = x;
+    rectangle.y = y;
     errorX = abs(x - (gridX * 50 * 50));
     errorY = abs(y - (gridY * 50 + 50));
-    cout << "gridX: " << gridX << endl;
-    cout << "gridY: " << gridY << endl << endl;
+//    cout << "gridX: " << gridX << endl;
+//    cout << "gridY: " << gridY << endl << endl;
+    }
     SDL_RenderCopy(renderer, texturePointer, NULL, rectanglePointer);
 }
 
