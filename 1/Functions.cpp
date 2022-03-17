@@ -43,6 +43,8 @@ void LoadSprites(){
 	LoadTexture("Textures\\Stone.png");
     LoadTexture("Textures\\Enemy1.png");
     LoadTexture("Textures\\Death1.png");
+    LoadTexture("Textures\\Character2.png");
+    LoadTexture("Textures\\Button.png");
 }
 
 int randomNumber(int lowerBorder, int upperBorder){

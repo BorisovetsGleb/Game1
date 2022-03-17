@@ -10,5 +10,6 @@ using namespace std;
 #include "Room.h"
 #include "Level.h"
 #include "Functions.h"
+#include "Menu.h"
 
 #endif // MAIN_H_INCLUDED

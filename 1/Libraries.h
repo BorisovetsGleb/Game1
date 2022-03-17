@@ -11,4 +11,5 @@ using namespace std;
 #include <chrono>
 #include <random>
 #include <cmath>
+#include<Windows.h>
 #endif // LIBRARIES_H_INCLUDED

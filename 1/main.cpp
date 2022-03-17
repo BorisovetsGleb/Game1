@@ -10,27 +10,42 @@ int main(int argc, char* args[]){
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
     bool isRun = true;
+    bool InMenu = true;
+    bool IsTupped = 0;
     SDL_Event event;
     LoadSprites();
     Player* player = new Player(350, 350, 72, 40, 5);
     Level level;
     Throwable* stone = new Throwable(400, 400, 44, 32, 2, 'c');
     FireBallEnemy* enemy1 = new FireBallEnemy(200, 200, 50, 50, players[0]->levelX, players[0]->levelY);
+    Menu* menu = new Menu();
     while(isRun){
         while (SDL_PollEvent(&event) != 0){
             if (event.type == SDL_QUIT || event.key.keysym.scancode == SDL_SCANCODE_ESCAPE)
             {
                 isRun = 0;
             }
+            if (event.type == SDL_MOUSEBUTTONDOWN)
+            {
+                IsTupped = 1;
+            }
+            else { IsTupped = 0; }
         }
-
         SDL_RenderClear(renderer);
-        Level::LoadRoom();
-        
-        stone->Move();
-        enemy1->FireEnemy();
-        player->Move();
-        stone->CheckCollision();
+        if (InMenu)
+        {
+            bool b1 = menu->Out(IsTupped);
+            if (b1) { InMenu = 0; }
+        }
+        else
+        {
+            Level::LoadRoom();
+
+            stone->Move();
+            enemy1->FireEnemy();
+            player->Move();
+            stone->CheckCollision();
+        }
         SDL_RenderPresent(renderer);
     }
     return 0;
