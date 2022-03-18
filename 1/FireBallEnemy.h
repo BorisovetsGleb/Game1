@@ -13,11 +13,11 @@ class FireBallEnemy : public Enemy{
 public:
 	FireBallEnemy(int x, int y, int w, int h, int RoomX, int RoomY);
 	void FireEnemy();
+	bool Alive = 1;//Is emeny alive?
 private:
 	void CanMove();//Can enemy move?
 	void Move();//move, if can
 	void CollisionWithPlayer();
-	bool Alive = 1;//Is emeny alive?
 	int x;
 	int y;
 	int w;

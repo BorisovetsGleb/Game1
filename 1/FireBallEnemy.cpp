@@ -13,9 +13,6 @@ FireBallEnemy::FireBallEnemy(int x, int y, int w, int h, int RoomX, int RoomY)
 	rectanglePointer->w = w;
 	rectanglePointer->h = h;
 	texturePointer = textures[15];
-	//InItRoom = Level->room;
-	//RoomX = level.x;
-	//RoomY = level.y;
 }
 
 void FireBallEnemy::CanMove()
@@ -63,6 +60,7 @@ void FireBallEnemy::FireEnemy()
 {
 	if (Alive && RoomX == players[0]->levelX && RoomY == players[0]->levelY)
 	{
+		if (x < 0 || y < 0 || x > 2000 || y > 2000) { Alive = 0; }
 		CanMove();
 		Move();
 		CollisionWithPlayer();
