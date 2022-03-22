@@ -17,4 +17,4 @@
 16. класс Animator, который будет отвечать за анимацию
 17. класс UIElement, который будет являться родительским классом для всех элементов интерфейса
 18. - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-19. (https://placehold.it/150/ffffff/ff0000?text=hello)
+19. ![](https://placehold.it/150/ffffff/ff0000?text=hello)
