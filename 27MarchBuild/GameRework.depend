@@ -1,0 +1,1109 @@
+# depslib dependency file v1.0
+1647186917 source:d:\project\game\gamerework\object.cpp
+	"Object.h"
+
+1647199142 source:d:\project\game\gamerework\player.cpp
+	"Object.h"
+
+1647106142 d:\project\game\gamerework\player.h
+
+1647199059 d:\project\game\gamerework\object.h
+	"main.h"
+
+1647178624 d:\project\game\gamerework\main.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	"Level.h"
+	"Functions.h"
+	"Object.h"
+
+1647186775 source:d:\project\game\gamerework\main.cpp
+	"main.h"
+
+1647195691 source:d:\project\game\gamerework\level.cpp
+	"Level.h"
+
+1647183706 source:d:\project\game\gamerework\roomtypes.cpp
+	"Object.h"
+
+1647186359 d:\project\game\gamerework\level.h
+	"main.h"
+
+1647184085 source:d:\project\game\gamerework\sprites.cpp
+	"main.h"
+
+1647178456 d:\project\game\gamerework\functions.h
+
+1647185265 source:d:\project\game\gamerework\functions.cpp
+	"main.h"
+
+1647375779 source:c:\users\glebs\downloads\ourgame\gamerework\functions.cpp
+	"main.h"
+
+1647379346 c:\users\glebs\downloads\ourgame\gamerework\main.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<list>
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+	"Object.h"
+
+1647381693 c:\users\glebs\downloads\ourgame\gamerework\level.h
+	"main.h"
+
+1647249724 c:\users\glebs\downloads\ourgame\gamerework\functions.h
+
+1647370596 c:\users\glebs\downloads\ourgame\gamerework\object.h
+	"main.h"
+
+1647371643 source:c:\users\glebs\downloads\ourgame\gamerework\level.cpp
+	"Level.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\main.cpp
+	"main.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\object.cpp
+	"Object.h"
+
+1647369160 source:c:\users\glebs\downloads\ourgame\gamerework\player.cpp
+	"Object.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\roomtypes.cpp
+	"Object.h"
+
+1647249724 source:c:\users\glebs\downloads\ourgame\gamerework\sprites.cpp
+	"main.h"
+
+1647380503 c:\users\glebs\downloads\ourgame\gamerework\room.h
+	"main.h"
+
+1647380991 source:c:\users\glebs\downloads\ourgame\gamerework\room.cpp
+	"Room.h"
+
+1647463805 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\functions.cpp
+	"main.h"
+
+1647379346 c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\main.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<list>
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+	"Object.h"
+
+1647456795 c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\room.h
+	"main.h"
+
+1647457333 c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\level.h
+	"main.h"
+
+1647460476 c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\functions.h
+
+1647370596 c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\object.h
+	"main.h"
+
+1647465471 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\main.cpp
+	"main.h"
+
+1647249724 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\object.cpp
+	"Object.h"
+
+1647464097 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\room.cpp
+	"Room.h"
+
+1647463903 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\roomtypes.cpp
+	"Object.h"
+
+1647249724 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\sprites.cpp
+	"main.h"
+
+1647465611 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\level.cpp
+	"Level.h"
+
+1647465338 source:c:\users\glebs\downloads\generatinglevels\generatinglevelscodeblocks\player.cpp
+	"Object.h"
+
+1647515906 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\functions.cpp
+	"main.h"
+
+1647514335 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647467567 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\room.h
+	"main.h"
+
+1647512075 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\level.h
+	"main.h"
+
+1647470507 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\functions.h
+
+1647518675 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\object.h
+	"Libraries.h"
+
+1647467567 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\level.cpp
+	"Level.h"
+
+1647520506 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\object.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\room.cpp
+	"Room.h"
+
+1647522294 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\sprites.cpp
+	"main.h"
+
+1647527293 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\player.cpp
+	"Player.h"
+	"Extern.h"
+	"Level.h"
+
+1647519780 source:c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Extern.h"
+
+1647514511 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\player.h
+	"Object.h"
+
+1647517524 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\throwable.h
+	"Object.h"
+
+1647525226 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+
+1647514335 c:\users\glebs\downloads\generatinglevels\game1-main\generatinglevelscodeblocks\extern.h
+
+1647515906 source:c:\users\glebs\downloads\wokingon\badcollision\functions.cpp
+	"main.h"
+
+1647528769 c:\users\glebs\downloads\wokingon\badcollision\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647525226 c:\users\glebs\downloads\wokingon\badcollision\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+
+1647514335 c:\users\glebs\downloads\wokingon\badcollision\extern.h
+
+1647530124 c:\users\glebs\downloads\wokingon\badcollision\player.h
+	"Object.h"
+
+1647518675 c:\users\glebs\downloads\wokingon\badcollision\object.h
+	"Libraries.h"
+
+1647530251 c:\users\glebs\downloads\wokingon\badcollision\throwable.h
+	"Object.h"
+
+1647467567 c:\users\glebs\downloads\wokingon\badcollision\room.h
+	"main.h"
+
+1647512075 c:\users\glebs\downloads\wokingon\badcollision\level.h
+	"main.h"
+
+1647470507 c:\users\glebs\downloads\wokingon\badcollision\functions.h
+
+1647467567 source:c:\users\glebs\downloads\wokingon\badcollision\level.cpp
+	"Level.h"
+
+1647529973 source:c:\users\glebs\downloads\wokingon\badcollision\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\wokingon\badcollision\object.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\wokingon\badcollision\room.cpp
+	"Room.h"
+
+1647522294 source:c:\users\glebs\downloads\wokingon\badcollision\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\wokingon\badcollision\sprites.cpp
+	"main.h"
+
+1647529908 source:c:\users\glebs\downloads\wokingon\badcollision\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Extern.h"
+
+1647530488 source:c:\users\glebs\downloads\wokingon\badcollision\player.cpp
+	"Player.h"
+	"Extern.h"
+	"Level.h"
+
+1647528647 c:\users\glebs\downloads\wokingon\badcollision\fireballenemy.h
+	"Enemy.h"
+
+1647528577 c:\users\glebs\downloads\wokingon\badcollision\enemy.h
+	"Object.h"
+
+1647528696 source:c:\users\glebs\downloads\wokingon\badcollision\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528694 source:c:\users\glebs\downloads\wokingon\badcollision\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528696 source:c:\users\glebs\downloads\test\badcollision\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528577 c:\users\glebs\downloads\test\badcollision\enemy.h
+	"Object.h"
+
+1647535632 c:\users\glebs\downloads\test\badcollision\object.h
+	"Libraries.h"
+
+1647525226 c:\users\glebs\downloads\test\badcollision\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+
+1647548629 c:\users\glebs\downloads\test\badcollision\extern.h
+
+1647512075 c:\users\glebs\downloads\test\badcollision\level.h
+	"main.h"
+
+1647528769 c:\users\glebs\downloads\test\badcollision\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647537247 c:\users\glebs\downloads\test\badcollision\player.h
+	"Object.h"
+
+1647528647 c:\users\glebs\downloads\test\badcollision\fireballenemy.h
+	"Enemy.h"
+
+1647545689 c:\users\glebs\downloads\test\badcollision\throwable.h
+	"Object.h"
+
+1647467567 c:\users\glebs\downloads\test\badcollision\room.h
+	"main.h"
+
+1647470507 c:\users\glebs\downloads\test\badcollision\functions.h
+
+1647528694 source:c:\users\glebs\downloads\test\badcollision\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647515906 source:c:\users\glebs\downloads\test\badcollision\functions.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollision\level.cpp
+	"Level.h"
+
+1647548636 source:c:\users\glebs\downloads\test\badcollision\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollision\object.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollision\room.cpp
+	"Room.h"
+
+1647522294 source:c:\users\glebs\downloads\test\badcollision\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollision\sprites.cpp
+	"main.h"
+
+1647546442 source:c:\users\glebs\downloads\test\badcollision\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647549520 source:c:\users\glebs\downloads\test\badcollision\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1647528696 source:c:\users\glebs\downloads\test\badcollisioncopy\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528577 c:\users\glebs\downloads\test\badcollisioncopy\enemy.h
+	"Object.h"
+
+1647535632 c:\users\glebs\downloads\test\badcollisioncopy\object.h
+	"Libraries.h"
+
+1647525226 c:\users\glebs\downloads\test\badcollisioncopy\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+
+1647548629 c:\users\glebs\downloads\test\badcollisioncopy\extern.h
+
+1647512075 c:\users\glebs\downloads\test\badcollisioncopy\level.h
+	"main.h"
+
+1647528769 c:\users\glebs\downloads\test\badcollisioncopy\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647537247 c:\users\glebs\downloads\test\badcollisioncopy\player.h
+	"Object.h"
+
+1647528647 c:\users\glebs\downloads\test\badcollisioncopy\fireballenemy.h
+	"Enemy.h"
+
+1647555440 c:\users\glebs\downloads\test\badcollisioncopy\throwable.h
+	"Object.h"
+
+1647467567 c:\users\glebs\downloads\test\badcollisioncopy\room.h
+	"main.h"
+
+1647470507 c:\users\glebs\downloads\test\badcollisioncopy\functions.h
+
+1647528694 source:c:\users\glebs\downloads\test\badcollisioncopy\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647515906 source:c:\users\glebs\downloads\test\badcollisioncopy\functions.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollisioncopy\level.cpp
+	"Level.h"
+
+1647556095 source:c:\users\glebs\downloads\test\badcollisioncopy\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollisioncopy\object.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollisioncopy\room.cpp
+	"Room.h"
+
+1647522294 source:c:\users\glebs\downloads\test\badcollisioncopy\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollisioncopy\sprites.cpp
+	"main.h"
+
+1647557461 source:c:\users\glebs\downloads\test\badcollisioncopy\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647555482 source:c:\users\glebs\downloads\test\badcollisioncopy\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1647528696 source:c:\users\glebs\downloads\test\badcollisioncopy2\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528577 c:\users\glebs\downloads\test\badcollisioncopy2\enemy.h
+	"Object.h"
+
+1647557990 c:\users\glebs\downloads\test\badcollisioncopy2\object.h
+	"Libraries.h"
+
+1647525226 c:\users\glebs\downloads\test\badcollisioncopy2\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+
+1647548629 c:\users\glebs\downloads\test\badcollisioncopy2\extern.h
+
+1647562568 c:\users\glebs\downloads\test\badcollisioncopy2\level.h
+	"main.h"
+
+1647562669 c:\users\glebs\downloads\test\badcollisioncopy2\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647537247 c:\users\glebs\downloads\test\badcollisioncopy2\player.h
+	"Object.h"
+
+1647528647 c:\users\glebs\downloads\test\badcollisioncopy2\fireballenemy.h
+	"Enemy.h"
+
+1647562411 c:\users\glebs\downloads\test\badcollisioncopy2\throwable.h
+	"Object.h"
+
+1647565186 c:\users\glebs\downloads\test\badcollisioncopy2\room.h
+	"main.h"
+
+1647470507 c:\users\glebs\downloads\test\badcollisioncopy2\functions.h
+
+1647528694 source:c:\users\glebs\downloads\test\badcollisioncopy2\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647561723 source:c:\users\glebs\downloads\test\badcollisioncopy2\functions.cpp
+	"main.h"
+
+1647565186 source:c:\users\glebs\downloads\test\badcollisioncopy2\level.cpp
+	"Level.h"
+	"Throwable.h"
+
+1647565198 source:c:\users\glebs\downloads\test\badcollisioncopy2\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollisioncopy2\object.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollisioncopy2\room.cpp
+	"Room.h"
+
+1647522294 source:c:\users\glebs\downloads\test\badcollisioncopy2\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\badcollisioncopy2\sprites.cpp
+	"main.h"
+
+1647565487 source:c:\users\glebs\downloads\test\badcollisioncopy2\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647564446 source:c:\users\glebs\downloads\test\badcollisioncopy2\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1647528696 source:c:\users\glebs\downloads\test\randomspawnlastbuild\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528577 c:\users\glebs\downloads\test\randomspawnlastbuild\enemy.h
+	"Object.h"
+
+1647557990 c:\users\glebs\downloads\test\randomspawnlastbuild\object.h
+	"Libraries.h"
+
+1647785118 c:\users\glebs\downloads\test\randomspawnlastbuild\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+	<ctime>
+	<cstdlib>
+
+1647548629 c:\users\glebs\downloads\test\randomspawnlastbuild\extern.h
+
+1647811551 c:\users\glebs\downloads\test\randomspawnlastbuild\level.h
+	"main.h"
+
+1647562669 c:\users\glebs\downloads\test\randomspawnlastbuild\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647537247 c:\users\glebs\downloads\test\randomspawnlastbuild\player.h
+	"Object.h"
+
+1647528647 c:\users\glebs\downloads\test\randomspawnlastbuild\fireballenemy.h
+	"Enemy.h"
+
+1647562411 c:\users\glebs\downloads\test\randomspawnlastbuild\throwable.h
+	"Object.h"
+
+1647565186 c:\users\glebs\downloads\test\randomspawnlastbuild\room.h
+	"main.h"
+
+1647811538 c:\users\glebs\downloads\test\randomspawnlastbuild\functions.h
+
+1647528694 source:c:\users\glebs\downloads\test\randomspawnlastbuild\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647811768 source:c:\users\glebs\downloads\test\randomspawnlastbuild\functions.cpp
+	"main.h"
+
+1647815682 source:c:\users\glebs\downloads\test\randomspawnlastbuild\level.cpp
+	"Level.h"
+	"Throwable.h"
+
+1647805849 source:c:\users\glebs\downloads\test\randomspawnlastbuild\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\randomspawnlastbuild\object.cpp
+	"Object.h"
+
+1647564446 source:c:\users\glebs\downloads\test\randomspawnlastbuild\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1647813553 source:c:\users\glebs\downloads\test\randomspawnlastbuild\room.cpp
+	"Room.h"
+
+1647522294 source:c:\users\glebs\downloads\test\randomspawnlastbuild\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\randomspawnlastbuild\sprites.cpp
+	"main.h"
+
+1647810515 source:c:\users\glebs\downloads\test\randomspawnlastbuild\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647528696 source:c:\users\glebs\downloads\test\workingon2\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528577 c:\users\glebs\downloads\test\workingon2\enemy.h
+	"Object.h"
+
+1647557990 c:\users\glebs\downloads\test\workingon2\object.h
+	"Libraries.h"
+
+1647785118 c:\users\glebs\downloads\test\workingon2\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+	<ctime>
+	<cstdlib>
+
+1647548629 c:\users\glebs\downloads\test\workingon2\extern.h
+
+1647811551 c:\users\glebs\downloads\test\workingon2\level.h
+	"main.h"
+
+1647562669 c:\users\glebs\downloads\test\workingon2\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647894407 c:\users\glebs\downloads\test\workingon2\player.h
+	"Object.h"
+
+1647528647 c:\users\glebs\downloads\test\workingon2\fireballenemy.h
+	"Enemy.h"
+
+1647562411 c:\users\glebs\downloads\test\workingon2\throwable.h
+	"Object.h"
+
+1647565186 c:\users\glebs\downloads\test\workingon2\room.h
+	"main.h"
+
+1647811538 c:\users\glebs\downloads\test\workingon2\functions.h
+
+1647528694 source:c:\users\glebs\downloads\test\workingon2\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647811768 source:c:\users\glebs\downloads\test\workingon2\functions.cpp
+	"main.h"
+
+1647894915 source:c:\users\glebs\downloads\test\workingon2\level.cpp
+	"Level.h"
+	"Throwable.h"
+
+1647805849 source:c:\users\glebs\downloads\test\workingon2\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\workingon2\object.cpp
+	"Object.h"
+
+1647895520 source:c:\users\glebs\downloads\test\workingon2\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1647813553 source:c:\users\glebs\downloads\test\workingon2\room.cpp
+	"Room.h"
+
+1647522294 source:c:\users\glebs\downloads\test\workingon2\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\workingon2\sprites.cpp
+	"main.h"
+
+1647895912 source:c:\users\glebs\downloads\test\workingon2\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647528696 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528577 c:\users\glebs\downloads\test\directingthrow21stfebruary\enemy.h
+	"Object.h"
+
+1647557990 c:\users\glebs\downloads\test\directingthrow21stfebruary\object.h
+	"Libraries.h"
+
+1647785118 c:\users\glebs\downloads\test\directingthrow21stfebruary\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+	<ctime>
+	<cstdlib>
+
+1647548629 c:\users\glebs\downloads\test\directingthrow21stfebruary\extern.h
+
+1647949330 c:\users\glebs\downloads\test\directingthrow21stfebruary\level.h
+	"main.h"
+
+1647562669 c:\users\glebs\downloads\test\directingthrow21stfebruary\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1647894407 c:\users\glebs\downloads\test\directingthrow21stfebruary\player.h
+	"Object.h"
+
+1647528647 c:\users\glebs\downloads\test\directingthrow21stfebruary\fireballenemy.h
+	"Enemy.h"
+
+1647562411 c:\users\glebs\downloads\test\directingthrow21stfebruary\throwable.h
+	"Object.h"
+
+1647565186 c:\users\glebs\downloads\test\directingthrow21stfebruary\room.h
+	"main.h"
+
+1647811538 c:\users\glebs\downloads\test\directingthrow21stfebruary\functions.h
+
+1647528694 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647955563 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\functions.cpp
+	"main.h"
+
+1647955581 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\level.cpp
+	"Level.h"
+	"Throwable.h"
+
+1647805849 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\object.cpp
+	"Object.h"
+
+1647895520 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1647813553 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\room.cpp
+	"Room.h"
+
+1647955563 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\sprites.cpp
+	"main.h"
+
+1647956926 source:c:\users\glebs\downloads\test\directingthrow21stfebruary\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647528696 source:c:\users\glebs\downloads\test\fixingshit\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1647528577 c:\users\glebs\downloads\test\fixingshit\enemy.h
+	"Object.h"
+
+1647557990 c:\users\glebs\downloads\test\fixingshit\object.h
+	"Libraries.h"
+
+1647785118 c:\users\glebs\downloads\test\fixingshit\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+	<ctime>
+	<cstdlib>
+
+1648126182 c:\users\glebs\downloads\test\fixingshit\extern.h
+
+1648141883 c:\users\glebs\downloads\test\fixingshit\level.h
+	"main.h"
+
+1648124663 c:\users\glebs\downloads\test\fixingshit\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1648141486 c:\users\glebs\downloads\test\fixingshit\player.h
+	"Object.h"
+
+1647528647 c:\users\glebs\downloads\test\fixingshit\fireballenemy.h
+	"Enemy.h"
+
+1647562411 c:\users\glebs\downloads\test\fixingshit\throwable.h
+	"Object.h"
+
+1648123182 c:\users\glebs\downloads\test\fixingshit\room.h
+	"main.h"
+
+1648125386 c:\users\glebs\downloads\test\fixingshit\functions.h
+
+1647528694 source:c:\users\glebs\downloads\test\fixingshit\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1648125386 source:c:\users\glebs\downloads\test\fixingshit\functions.cpp
+	"main.h"
+	"Functions.h"
+
+1648296619 source:c:\users\glebs\downloads\test\fixingshit\level.cpp
+	"Level.h"
+	"Throwable.h"
+
+1648296469 source:c:\users\glebs\downloads\test\fixingshit\main.cpp
+	"main.h"
+
+1647467567 source:c:\users\glebs\downloads\test\fixingshit\object.cpp
+	"Object.h"
+
+1648126187 source:c:\users\glebs\downloads\test\fixingshit\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1648296586 source:c:\users\glebs\downloads\test\fixingshit\room.cpp
+	"Room.h"
+
+1648119642 source:c:\users\glebs\downloads\test\fixingshit\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\fixingshit\sprites.cpp
+	"main.h"
+
+1647980642 source:c:\users\glebs\downloads\test\fixingshit\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647528696 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1648298127 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\enemy.h
+	"Object.h"
+
+1648298193 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\object.h
+	"Libraries.h"
+
+1647785118 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+	<ctime>
+	<cstdlib>
+
+1648126182 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\extern.h
+
+1648307825 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\level.h
+	"main.h"
+
+1648124663 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1648298019 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\player.h
+	"Object.h"
+
+1648297932 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\fireballenemy.h
+	"Enemy.h"
+
+1647562411 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\throwable.h
+	"Object.h"
+
+1648297475 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\room.h
+	"main.h"
+
+1648125386 c:\users\glebs\downloads\test\deletingandgeneratingdone26march\functions.h
+
+1648298666 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1648298255 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\functions.cpp
+	"main.h"
+	"Functions.h"
+
+1648320069 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\level.cpp
+	"Level.h"
+	"Throwable.h"
+
+1648296469 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\main.cpp
+	"main.h"
+
+1648297637 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\object.cpp
+	"Object.h"
+
+1648298460 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1648296586 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\room.cpp
+	"Room.h"
+
+1648308131 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\sprites.cpp
+	"main.h"
+
+1647980642 source:c:\users\glebs\downloads\test\deletingandgeneratingdone26march\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
+1647528696 source:c:\users\glebs\downloads\test\26marchbuild\enemy.cpp
+	"Enemy.h"
+	"Extern.h"
+	"Level.h"
+
+1648298127 c:\users\glebs\downloads\test\26marchbuild\enemy.h
+	"Object.h"
+
+1648298193 c:\users\glebs\downloads\test\26marchbuild\object.h
+	"Libraries.h"
+
+1647785118 c:\users\glebs\downloads\test\26marchbuild\libraries.h
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<string>
+	<vector>
+	<chrono>
+	<random>
+	<cmath>
+	<ctime>
+	<cstdlib>
+
+1648126182 c:\users\glebs\downloads\test\26marchbuild\extern.h
+
+1648307825 c:\users\glebs\downloads\test\26marchbuild\level.h
+	"main.h"
+
+1648124663 c:\users\glebs\downloads\test\26marchbuild\main.h
+	"Libraries.h"
+	"Extern.h"
+	"Player.h"
+	"FireBallEnemy.h"
+	"Throwable.h"
+	"Room.h"
+	"Level.h"
+	"Functions.h"
+
+1648298019 c:\users\glebs\downloads\test\26marchbuild\player.h
+	"Object.h"
+
+1648297932 c:\users\glebs\downloads\test\26marchbuild\fireballenemy.h
+	"Enemy.h"
+
+1647562411 c:\users\glebs\downloads\test\26marchbuild\throwable.h
+	"Object.h"
+
+1648297475 c:\users\glebs\downloads\test\26marchbuild\room.h
+	"main.h"
+
+1648125386 c:\users\glebs\downloads\test\26marchbuild\functions.h
+
+1648298666 source:c:\users\glebs\downloads\test\26marchbuild\fireballenemy.cpp
+	"FireBallEnemy.h"
+	"Extern.h"
+	"Level.h"
+
+1648409274 source:c:\users\glebs\downloads\test\26marchbuild\functions.cpp
+	"main.h"
+	"Functions.h"
+
+1648409411 source:c:\users\glebs\downloads\test\26marchbuild\level.cpp
+	"Level.h"
+	"Throwable.h"
+
+1648409467 source:c:\users\glebs\downloads\test\26marchbuild\main.cpp
+	"main.h"
+
+1648297637 source:c:\users\glebs\downloads\test\26marchbuild\object.cpp
+	"Object.h"
+
+1648298460 source:c:\users\glebs\downloads\test\26marchbuild\player.cpp
+	"Player.h"
+	"Libraries.h"
+	"Extern.h"
+	"Level.h"
+
+1648296586 source:c:\users\glebs\downloads\test\26marchbuild\room.cpp
+	"Room.h"
+
+1648409432 source:c:\users\glebs\downloads\test\26marchbuild\roomtypes.cpp
+	"Object.h"
+
+1647467567 source:c:\users\glebs\downloads\test\26marchbuild\sprites.cpp
+	"main.h"
+
+1647980642 source:c:\users\glebs\downloads\test\26marchbuild\throwable.cpp
+	"Throwable.h"
+	"Player.h"
+	"Level.h"
+	"Extern.h"
+
