@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GameRework" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GameRework" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GameRework" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Animator.cpp" />
+		<Unit filename="Animator.h" />
+		<Unit filename="Enemy.cpp" />
+		<Unit filename="Enemy.h" />
+		<Unit filename="Extern.h" />
+		<Unit filename="FireBallEnemy.cpp" />
+		<Unit filename="FireBallEnemy.h" />
+		<Unit filename="Functions.cpp" />
+		<Unit filename="Functions.h" />
+		<Unit filename="Level.cpp" />
+		<Unit filename="Level.h" />
+		<Unit filename="Libraries.h" />
+		<Unit filename="MapElement.cpp" />
+		<Unit filename="MapElement.h" />
+		<Unit filename="Object.cpp" />
+		<Unit filename="Object.h" />
+		<Unit filename="Player.cpp" />
+		<Unit filename="Player.h" />
+		<Unit filename="Room.cpp" />
+		<Unit filename="Room.h" />
+		<Unit filename="RoomTypes.cpp" />
+		<Unit filename="Sprites.cpp" />
+		<Unit filename="Textures/Character1.png" />
+		<Unit filename="Textures/Character2.png" />
+		<Unit filename="Textures/Death.png" />
+		<Unit filename="Textures/Enemy1.png" />
+		<Unit filename="Textures/Enemy2.png" />
+		<Unit filename="Textures/EnemySpawner.png" />
+		<Unit filename="Textures/Ground1.png" />
+		<Unit filename="Textures/Ground2.png" />
+		<Unit filename="Textures/Ground3.png" />
+		<Unit filename="Textures/Ground4.png" />
+		<Unit filename="Textures/Ground5.png" />
+		<Unit filename="Textures/GroundSpikes.png" />
+		<Unit filename="Textures/Wall2.png" />
+		<Unit filename="Textures/Wall3.png" />
+		<Unit filename="Textures/WallDownLeftCorner.png" />
+		<Unit filename="Textures/WallDownRightCorner.png" />
+		<Unit filename="Textures/WallLeftRight.png" />
+		<Unit filename="Textures/WallUpDown.png" />
+		<Unit filename="Textures/WallUpperLeftCorner.png" />
+		<Unit filename="Textures/WallUpperRightCorner.png" />
+		<Unit filename="Throwable.cpp" />
+		<Unit filename="Throwable.h" />
+		<Unit filename="UIElement.cpp" />
+		<Unit filename="UIElement.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

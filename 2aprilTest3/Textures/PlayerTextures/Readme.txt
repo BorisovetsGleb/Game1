@@ -1,0 +1,1 @@
+all frames are 18 pixels width and 11 pixels height
